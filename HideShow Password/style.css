@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #250057;
+}
+.input-box{
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 300px auto; /*with these we put this div in the center (300px from top and buttom and auto for left and right wich will center it horizontally*/
+    display: flex; /* to make them in the same horizontal line*/
+    align-items: center;
+}
+.input-box input{
+    width: 100%; /* will use all the space avaialable in the row*/
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    color: #555;
+}
+.input-box img{
+    width: 35px;
+    cursor: pointer;
+}

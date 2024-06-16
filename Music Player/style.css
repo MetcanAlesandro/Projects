@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex; /* this and align-items: center + justfy-content:center will help us to move that div in the center*/
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.*/
+}
+.musicPlayer{
+    background: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
+nav{
+    display: flex; /* to be aranged one after the other*/
+    justify-content: space-between; /* this will arange them on all the div equal space between them*/
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    padding-top: 11px; /* I added this to center the icons, for some reason he didn't needed*/
+}
+.songImg{
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+.musicPlayer h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.musicPlayer p{
+    font-size: 14px;
+    color: #333;
+}
+#progress{
+    -webkit-appearance: none; /* will hide the default range slider*/
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+} /* here we made the progress bar as we wanted (input, type range in html)*/
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none; /* here we hide the defuld slider*/
+    background: #f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+} /* with these I added some nice with circles around the control buttons*/
+.controls div:nth-child(2){ /* to select the play icon*/
+    transform: scale(1.5); /* so it will be larger then the other two*/
+    background: #f53192;
+    color: #fff;
+}
